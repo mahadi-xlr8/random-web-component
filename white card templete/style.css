@@ -1,0 +1,40 @@
+body{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 200px;
+    position: relative;
+}
+.main{
+    height: 400px;
+    box-shadow: 0 0 10px 0 gray;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    width: 300px;
+    transition: all 0.3s;
+}
+.shedow{
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: -5px;
+    rotate: -5deg;
+    border: 1.5px solid #aaa;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.main:hover ~ .shedow{
+    rotate: 0deg;
+    scale: 0.97;
+}
+.main:hover{
+    background-color: white;
+}
+
+.temp{
+    height: 40px;
+    width: 40px;
+    background-color: yellow;
+}
